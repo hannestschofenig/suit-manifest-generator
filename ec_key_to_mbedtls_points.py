@@ -39,13 +39,13 @@ key = load_pem_public_key(keystr, backend=default_backend())
 xa = ['0x%02x'% x for x in binascii.a2b_hex(('%%0%dx'%(2*MBEDTLS_ECP_MAX_BYTES))%key.public_numbers().x)]
 ya = ['0x%02x'% x for x in binascii.a2b_hex(('%%0%dx'%(2*MBEDTLS_ECP_MAX_BYTES))%key.public_numbers().y)]
 
-print('const unsigned char mbedtls_ec_public_key_x [MBEDTLS_ECP_MAX_BYTES] = {')
+print('const unsigned char pk_x [MBEDTLS_ECP_MAX_BYTES] = {')
 while xa:
     print('    ' + ', '.join(xa[:HEX_VALUES_PER_LINE]) + ',')
     xa = xa[HEX_VALUES_PER_LINE:]
 print('};')
 
-print('const unsigned char mbedtls_ec_public_key_y [MBEDTLS_ECP_MAX_BYTES] = {')
+print('const unsigned char pk_y [MBEDTLS_ECP_MAX_BYTES] = {')
 while ya:
     print('    ' + ', '.join(ya[:HEX_VALUES_PER_LINE]) + ',')
     ya = ya[HEX_VALUES_PER_LINE:]

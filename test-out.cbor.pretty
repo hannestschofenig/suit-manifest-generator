@@ -1,0 +1,49 @@
+8a                                      # array(10)
+   02                                   # unsigned(2)
+   a4                                   # map(4)
+      01                                # unsigned(1)
+      6e                                # text(14)
+         5468697320697320612074657374   # "This is a test"
+      02                                # unsigned(2)
+      6e                                # text(14)
+         412074657374207061796c6f6164   # "A test payload"
+      03                                # unsigned(3)
+      6f                                # text(15)
+         412073616d706c652076656e646f72 # "A sample vendor"
+      04                                # unsigned(4)
+      75                                # text(21)
+         416e206578706572696d656e74616c206d6f64656c # "An experimental model"
+   50                                   # bytes(16)
+      bde6d25b8c591ba464d54703b9d50dcf  # "\xBD\xE6\xD2[\x8CY\e\xA4d\xD5G\x03\xB9\xD5\r\xCF"
+   1a 5b494e0c                          # unsigned(1531530764)
+   82                                   # array(2)
+      82                                # array(2)
+         01                             # unsigned(1)
+         50                             # bytes(16)
+            fa6b4a53d5ad5fdfbe9de663e4d41ffe # "\xFAkJS\xD5\xAD_\xDF\xBE\x9D\xE6c\xE4\xD4\x1F\xFE"
+      82                                # array(2)
+         02                             # unsigned(2)
+         50                             # bytes(16)
+            1492af1425695e48bf429b2d51f2ab45 # "\x14\x92\xAF\x14%i^H\xBFB\x9B-Q\xF2\xABE"
+   f6                                   # primitive(22)
+   f6                                   # primitive(22)
+   f6                                   # primitive(22)
+   f6                                   # primitive(22)
+   87                                   # array(7)
+      81                                # array(1)
+         01                             # unsigned(1)
+      10                                # unsigned(16)
+      43                                # bytes(3)
+         666f6f                         # "foo"
+      81                                # array(1)
+         82                             # array(2)
+            01                          # unsigned(1)
+            6e                          # text(14)
+               687474703a2f2f666f6f2e636f6d # "http://foo.com"
+      81                                # array(1)
+         01                             # unsigned(1)
+      a1                                # map(1)
+         01                             # unsigned(1)
+         58 20                          # bytes(32)
+            c31211d1ff88f77a5aaf653677895bfca769f06da198a8fa71156aa64acd695d # "\xC3\x12\x11\xD1\xFF\x88\xF7zZ\xAFe6w\x89[\xFC\xA7i\xF0m\xA1\x98\xA8\xFAq\x15j\xA6J\xCDi]"
+      f6                                # primitive(22)

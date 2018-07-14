@@ -196,7 +196,7 @@ def getPayloadSize(payloadInfo):
 
 def getPayloadStorageId(payloadInfo):
     if not 'storageId' in payloadInfo:
-        raise KeyError('storageId is required in payloadInfo')
+        return None # raise KeyError('storageId is required in payloadInfo')
     return guessBinFormat(payloadInfo['storageId'])
 
 def getPayloadURIs(payloadInfo):
